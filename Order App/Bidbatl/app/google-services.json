@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "546206328479",
+    "firebase_url": "https://bidbatl-82604.firebaseio.com",
+    "project_id": "bidbatl-82604",
+    "storage_bucket": "bidbatl-82604.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546206328479:android:328e7a53b63e37f3b224aa",
+        "android_client_info": {
+          "package_name": "com.app.bidbatl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546206328479-vcuffg59iga4stdtotv6jsbi063148o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2lw5AGTrU1hZLMC89LyqKRm50rp4VO7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546206328479-vcuffg59iga4stdtotv6jsbi063148o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

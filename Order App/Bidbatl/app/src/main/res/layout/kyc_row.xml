@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/kyc_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/textView_kyc_type"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/kyc_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Aadhar"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Name"
+                android:textColor="@color/gray_text_color"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="@+id/textView_kyc_type"
+                app:layout_constraintTop_toBottomOf="@+id/textView_kyc_type" />
+
+            <TextView
+                android:id="@+id/textView_kyc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Sahabe Alam"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/textView39"
+                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <TextView
+                android:id="@+id/textView_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/gray_text_color"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="13dp"
+                android:text="Aadhar Card Number"
+                app:layout_constraintStart_toStartOf="@+id/textView_kyc_name"
+                app:layout_constraintTop_toBottomOf="@+id/textView_kyc_name" />
+
+            <TextView
+                android:id="@+id/textView_kyc_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="5555 5555 5555"
+                android:textColor="@color/text_color"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView_type_title"
+                app:layout_constraintTop_toBottomOf="@+id/textView_type_title" />
+
+            <ImageView
+                android:id="@+id/imageView_user"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/girl_photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_verify"
+                android:layout_width="15sp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView_verify"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/submitted" />
+
+            <TextView
+                android:id="@+id/textView_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="verified"
+                android:textColor="@color/blue_color"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_kyc_num"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_verify" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

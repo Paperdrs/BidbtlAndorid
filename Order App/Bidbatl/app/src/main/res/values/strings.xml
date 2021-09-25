@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bidbatl</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_transction_history">TransctionHistoryActivity</string>
+    <string name="no_network">No network connection</string>
+    <string name="client_side">Errors happening on client side when sending api request</string>
+    <string name="time_out">Connection timed out</string>
+    <string name="failed_to_server">Failed to connect to server</string>
+    <string name="data_parsing_error">Data parsing error</string>
+    <string name="server_wrong">The server has gone wrong.</string>
+    <string name="auth_failure">Authentication failure when performing a Request</string>
+    <string name="error_message">Something went wrong please try again</string>
+</resources>

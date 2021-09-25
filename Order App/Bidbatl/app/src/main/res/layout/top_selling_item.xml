@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/backgroundView"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewItem"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/maggi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewitemTitel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="15dp"
+                android:textColor="@color/blue_color"
+                android:text="BB Natural Almond ,Premium Quality"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_delete"
+                app:layout_constraintStart_toEndOf="@+id/imageViewItem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/button_border"
+                android:text="Rate"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_mrp" />
+
+            <ImageView
+                android:id="@+id/imageView_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewitemTitel"
+                app:srcCompat="@drawable/delete" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#FEF1EE"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView71">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center|left"
+                    android:text="Quantity"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/editText_qnty" />
+
+                <EditText
+                    android:id="@+id/editText_qnty"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:text=""
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView_addCartItem"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+                <TextView
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView_addCartItem"
+                    app:layout_constraintStart_toEndOf="@+id/editText_qnty"
+                    app:layout_constraintTop_toTopOf="@+id/editText_qnty" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="/ 500gm"
+                android:textColor="@color/gray_text_color"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@+id/textView_price"
+                app:layout_constraintTop_toTopOf="@+id/textView_price" />
+
+            <TextView
+                android:id="@+id/textView_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="₹21"
+                android:textColor="#333333"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/textView_category"
+                app:layout_constraintTop_toBottomOf="@+id/textView_category" />
+
+            <TextView
+                android:id="@+id/textView_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Nestlé"
+                android:textSize="12dp"
+                android:fontFamily="@font/roboto_regular"
+                app:layout_constraintStart_toStartOf="@+id/textViewitemTitel"
+                app:layout_constraintTop_toBottomOf="@+id/textViewitemTitel" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Qty in CFC:"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/quantity"
+                app:layout_constraintStart_toStartOf="@+id/textView_price"
+                app:layout_constraintTop_toBottomOf="@+id/textView_price" />
+
+            <TextView
+                android:id="@+id/textView_cfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="80"
+                android:textSize="12dp"
+                android:fontFamily="@font/roboto_regular"
+                app:layout_constraintStart_toEndOf="@+id/textView71"
+                app:layout_constraintTop_toTopOf="@+id/textView71" />
+
+            <TextView
+                android:id="@+id/textview_mrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:text="455"
+                app:layout_constraintEnd_toEndOf="@+id/textViewitemTitel"
+                app:layout_constraintTop_toBottomOf="@+id/textViewitemTitel" />
+
+            <TextView
+                android:id="@+id/textView_price_calculation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="5*20 = 100"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:textColor="@color/blue_color"
+                android:fontFamily="@font/roboto_medium"
+                app:layout_constraintEnd_toEndOf="@+id/buttonAdd"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
+            <TextView
+                android:id="@+id/textView_cart_qnty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="In cart: 5"
+                android:textColor="@color/blue_color"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/buttonAdd"
+                app:layout_constraintTop_toTopOf="@+id/textView71" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Out of Stock"
+                android:textColor="@color/red_color"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/quantity"
+                app:layout_constraintEnd_toEndOf="@+id/buttonAdd"
+                app:layout_constraintTop_toBottomOf="@+id/textView_cart_qnty" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

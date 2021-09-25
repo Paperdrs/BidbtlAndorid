@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none"
+        >
+        <item
+            android:id="@+id/bidbatl_point"
+            android:icon="@drawable/coins"
+            android:title="Bidbatl Point 1000" />
+        <item
+            android:id="@+id/my_order"
+            android:icon="@drawable/order"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/my_account"
+            android:icon="@drawable/user"
+            android:title="My Account" />
+        <item
+            android:id="@+id/saved_address"
+            android:icon="@drawable/home"
+            android:title="Saved Addresses" />
+        <item
+            android:id="@+id/wishlist"
+            android:visible="false"
+            android:icon="@drawable/like"
+            android:title="Wishlist" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Log Out" />
+    </group>
+
+
+</menu>

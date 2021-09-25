@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.bidbatl">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".Utility.ApplicationController"
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@drawable/logo_orange"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_orange"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".Activity.NotificationActivity"></activity>
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.OrderStatusActivity" />
+        <activity android:name=".Activity.PaymentOptionActivity" />
+        <activity android:name=".Activity.OrderSummaryActivity" />
+        <activity android:name=".Activity.KYCDetailActivity" />
+        <activity android:name=".Activity.OrderDetailActivity" />
+        <activity android:name=".Activity.BaseActivity" />
+        <activity android:name=".Activity.TransctionHistoryActivity" />
+        <activity android:name=".Activity.KYCActivity" />
+        <activity android:name=".Activity.BidbatlPointsActivity" />
+        <activity android:name=".Activity.UserDetailActivity" />
+        <activity android:name=".Activity.AddNewAddressActivity" />
+        <activity android:name=".Activity.CategoryActivity" />
+        <activity android:name=".Activity.PhotoBrowser"/>
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:theme="@style/WhiteTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".Activity.product.MyCartActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activity.ForgotPasswordActivity" />
+        <activity android:name=".Activity.MyOrderesActivity" />
+        <activity android:name=".Activity.SavedAddressActivity" />
+        <activity android:name=".Activity.WishListActivity" />
+        <activity android:name=".Activity.MyAccountActivity" />
+        <activity android:name=".Activity.ProductListActivity" />
+        <activity android:name=".Activity.OTPActivity" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:theme="@style/WhiteTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.FirstActivity" />
+        <activity android:name=".Activity.AddressActivity" />
+        <activity android:name=".Activity.SignupActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.product.MainActivity"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.media.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
