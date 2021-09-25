@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ChecqueFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutMain"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/border_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15sp"
+                    android:text="Cheque Date"
+                    app:layout_constraintEnd_toStartOf="@+id/textView18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/textView18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+                    <TextView
+                        android:id="@+id/textView_cheque_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textColor="@color/gray_text_color"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="15sp"
+                        android:background="@drawable/top_border"
+                        android:gravity="center"
+                        android:text="2000" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/border_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="Cheque No."
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView19"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+                    <EditText
+                        android:id="@+id/textView_cheque_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/top_border"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:hint="XXXXXX"
+                        android:maxLength="6"
+                        android:textColor="@color/gray_text_color"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+
+                <TextView
+                    android:id="@+id/textView201"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="Amount"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView201">
+
+                    <EditText
+                        android:id="@+id/textView_cheque_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/top_border"
+                        android:gravity="center"
+                        android:textColor="@color/gray_text_color"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="15sp"
+                        android:hint="XXXXXX" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/button_cheque_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/upload_icon"
+            android:text="Upload Cheque Photo"
+            android:textColor="@android:color/black"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/imageView_container"
+            android:layout_height="130dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageView_cheque"
+                android:layout_height="match_parent"/>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:id="@+id/progress_circular"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_container"
+                app:layout_constraintTop_toTopOf="@+id/imageView_container"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_blue_button"
+        android:text="Proceed"
+        android:textColor="@android:color/white"
+        android:theme="@style/ButtonTheme"
+        />
+    </LinearLayout>
+
+
+</FrameLayout>
+</layout>

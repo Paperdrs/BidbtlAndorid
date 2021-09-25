@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reportnondeliver.ReportNonDeliveryActivity">
+    <include layout="@layout/toolbar_normal"
+        android:id="@+id/toolbar_normal"/>
+
+    <TextView
+        android:id="@+id/textView_deliveryNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Delivery 1"
+        android:textColor="@color/blue_color"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_normal" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="Order Id: "
+        android:textColor="@color/gray_text_color"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_deliveryNo"
+        app:layout_constraintTop_toBottomOf="@+id/textView_deliveryNo" />
+
+    <TextView
+        android:id="@+id/textView_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="82828828"
+        android:textColor="@color/gray_text_color"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/textView_deliveryNo" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="Customer Name:"
+        android:textColor="@color/gray_text_color"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textView_customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="Sahabe Alam"
+        android:textColor="@color/gray_text_color"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/textView61"
+        app:layout_constraintTop_toTopOf="@+id/textView61" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="Invoice No. :"
+        android:textColor="@color/gray_text_color"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/textView61"
+        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+    <TextView
+        android:id="@+id/textView_invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="328328"
+        android:textColor="@color/gray_text_color"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border_unfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView63">
+
+        <ImageView
+            android:id="@+id/imageView_upload"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/placeholder" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        app:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_message"
+            android:inputType="textMultiLine"
+            android:hint="Message" />
+    </com.google.android.material.textfield.TextInputLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="0dp"
+    android:layout_height="45dp"
+    android:id="@+id/spinner_holder"
+    android:background="@drawable/border"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="0dp"
+        app:theme="@style/ButtonTheme"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Send Intimation"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_blue_button"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_holder"
+        app:layout_constraintStart_toStartOf="@+id/spinner_holder"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_holder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

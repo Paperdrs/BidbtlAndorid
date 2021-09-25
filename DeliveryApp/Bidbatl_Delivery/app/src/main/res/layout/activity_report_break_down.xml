@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reportbreakdown.ReportBreakDownActivity">
+
+    <include
+        android:id="@+id/toolbar_normal"
+        layout="@layout/toolbar_normal" />
+
+    <ImageView
+        android:id="@+id/textView50"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/circle_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout_call"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout_call"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout_call" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_call"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_blue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_normal">
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="93939393939"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/call" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+        <Button
+            android:id="@+id/button_call_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#FF5252"
+            android:text="Call Help Line number 112"
+            app:theme="@style/ButtonTheme"
+            />
+        <Button
+            android:id="@+id/button_report"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_color"
+            android:text="Report"
+            app:theme="@style/ButtonTheme"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_upload"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/border_unfil"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_call"
+        app:srcCompat="@drawable/placeholder" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/textView_message"
+            android:fontFamily="@font/poppins"
+            android:textSize="17sp"
+            android:hint="Add text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

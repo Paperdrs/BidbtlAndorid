@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF6D49</color>
+    <color name="colorPrimaryDark">#d76241</color>
+    <color name="colorAccent">#d76241</color>
+    <color name="orangeColor">#EF6D49</color>
+    <color name="categoryColor">#fad3c8</color>
+    <color name="gray">#a3a3a3</color>
+    <color name="border_color">#999</color>
+    <color name="hilightedColor">#c1d6ea</color>
+    <color name="background_color">#F3F5F9</color>
+    <color name="text_color">#333333</color>
+    <color name="gray_text_color">#888993</color>
+    <color name="blue_color">#3377B9</color>
+    <color name="green_color">#78D26E</color>
+    <color name="gray_button_color">#F1F1F1</color>
+    <color name="yellow_color">#F4C265</color>
+</resources>

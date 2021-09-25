@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:paddingRight="15dp">
+
+
+
+    <Button
+        android:id="@+id/button_live"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_blue_button"
+        android:layout_marginRight="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_weight="0.5"
+        android:textAllCaps="false"
+        android:text="Go Live" />
+
+    <Button
+        android:id="@+id/button_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.5"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_gray_button"
+        android:text="Operations" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>

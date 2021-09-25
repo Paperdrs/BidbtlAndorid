@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/confirmation"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Logoutebebrebnre"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <TextView
+            android:id="@+id/textView_yes"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/gray_button_color"
+            android:background="@color/orangeColor"
+            android:textSize="20dp"
+            android:text="Yes"
+            android:visibility="visible"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_no"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:background="@color/gray_button_color"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="No"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

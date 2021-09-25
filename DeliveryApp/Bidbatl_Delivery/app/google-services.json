@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "219610502394",
+    "firebase_url": "https://bidbatl-delivery.firebaseio.com",
+    "project_id": "bidbatl-delivery",
+    "storage_bucket": "bidbatl-delivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219610502394:android:3946e4291634e9952d6543",
+        "android_client_info": {
+          "package_name": "com.bidbatl.dileveryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219610502394-obicp4t7n53elu900s0dtjsdas6qgcno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeQvDi4y_xOGDXZokT1taalt8XuetNO1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219610502394-obicp4t7n53elu900s0dtjsdas6qgcno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

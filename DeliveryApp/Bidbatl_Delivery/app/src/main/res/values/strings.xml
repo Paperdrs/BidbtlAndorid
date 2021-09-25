@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DileveryApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="profile_title">My Profile</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="vehicle_document_title">Vehicle Documents</string>
+    <string name="report_break_down_title">Report Breakdown</string>
+    <string name="report_non_deliver_title">Report Non Deliver</string>
+
+    <string-array name="Languages">
+        <item>Select Reason for non delivery</item>
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+        <item>Option 4</item>
+        <item>Option 5</item>
+    </string-array>
+</resources>

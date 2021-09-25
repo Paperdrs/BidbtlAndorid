@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_vehicle_doc"
+            android:icon="@drawable/vehicle_doc"
+            android:title="Vehicle Document"/>
+        <item
+            android:id="@+id/nav_report_bd"
+            android:icon="@drawable/report_breakdown"
+            android:title="Report breakdown"/>
+        <item
+            android:id="@+id/nav_report_un_deliver"
+            android:icon="@drawable/un_deliver"
+            android:title="Report Non Deliver"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Log Out"/>
+    </group>
+
+
+</menu>

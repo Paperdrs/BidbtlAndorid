@@ -15,3 +15,22 @@ Order App/Bidbatl/app/app.iml
 Order App/Bidbatl/build/intermediates/
 Order App/Bidbatl/Bidbatl.iml
 
+
+*.iml
+DeliveryApp/Bidbatl_Delivery/.idea
+DeliveryApp/Bidbatl_Delivery/.gradle
+DeliveryApp/Bidbatl_Delivery/.DS_Store
+DeliveryApp/Bidbatl_Delivery/local.properties
+DeliveryApp/Bidbatl_Delivery/.idea/caches/
+DeliveryApp/Bidbatl_Delivery/.idea/libraries
+DeliveryApp/Bidbatl_Delivery/.idea/modules.xml
+DeliveryApp/Bidbatl_Delivery/.idea/workspace.xml
+DeliveryApp/Bidbatl_Delivery/.idea/navEditor.xml
+DeliveryApp/Bidbatl_Delivery/.idea/assetWizardSettings.xml
+DeliveryApp/Bidbatl_Delivery.DS_Store
+DeliveryApp/Bidbatl_Delivery/build
+DeliveryApp/Bidbatl_Delivery/captures
+DeliveryApp/Bidbatl_Delivery.externalNativeBuild
+DeliveryApp/Bidbatl_Delivery.cxx
+DeliveryApp/Bidbatl_Delivery.idea/codeStyles/codeStyleConfig.xml
+
